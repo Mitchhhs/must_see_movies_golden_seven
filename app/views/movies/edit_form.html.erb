@@ -1,0 +1,25 @@
+<h1>Edit a Director</h1>
+
+<form action=<%= @action %>
+  <div>
+    <label for="director_name">Director Name:</label>
+    <input id="director_name" type="text" name="the_name" value="<%= @director.name %>">
+  </div>
+  <div>
+    <label for="director_bio">Bio:</label>
+    <input id="director_bio" type="text-area" name="the_bio" value="<%= @director.bio %>">
+  </div>
+  <div>
+    <label for="director_dob">DOB</label>
+    <input id="director_dob" type="text" name="the_dob" value="<%= @director.dob %>">
+  </div>
+  <div>
+    <label for="photo_image_url">Image URL:</label>
+    <input id="photo_image_url" type="text" name="the_photo" value="<%= @director.image_url %>">
+  </div>
+
+
+  <div>
+    <button>Update Director</button>
+  </div>
+</form>

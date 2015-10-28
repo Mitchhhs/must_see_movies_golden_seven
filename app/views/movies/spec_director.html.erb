@@ -1,0 +1,29 @@
+ <table>
+ <tr>
+    <th>Director</th>
+    <th>Bio</th>
+    <th>Date of Birth</th>
+    <th>Picture</th>
+    <th>Actions</th>
+  </tr>
+  <tr>
+    <td>
+      <%= @director.name %>
+    </td>
+    <td>
+      <%= @director.bio %>
+    </td>
+    <td>
+      <%= @director.dob %>
+    </td>
+    <td>
+      <img src=<%= @director.image_url %>
+    </td>
+    <td>
+    <a href="http://localhost:3000/directors/<%= @director.id %>/edit_form">Update Entry</a>
+    <p>
+    <a href="http://localhost:3000/delete_director/<%= @director.id %>">Delete Entry</a>
+    </td>
+
+  </tr>
+</table>
